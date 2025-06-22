@@ -1,7 +1,10 @@
 import './App.css';
 import image from './silly-landing.gif';
+import { useNavigate } from 'react-router-dom';
 
 function Landing() {
+    let navigate = useNavigate();
+
     return (
         <div className="box-container">
             <h2 className="landing-title">Login Successful!</h2>
@@ -9,7 +12,8 @@ function Landing() {
             <img src={image} className="landing-image" />
             <p className="message">Nothing else to see here...</p>
 
-            <button type="button" className="logout-button">Logout</button>
+            <button type="button" className="logout-button"
+            onClick={() => navigate('/login')}>Logout</button>
         </div>
     );
 }
