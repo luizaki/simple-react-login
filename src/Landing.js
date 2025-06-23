@@ -9,7 +9,7 @@ function Landing() {
         <div className="box-container">
             <h2 className="landing-title">Login Successful!</h2>
 
-            <img src={image} className="landing-image" />
+            <img src={image} alt="Happy cat dancing GIF" className="landing-image" />
             <p className="message">Nothing else to see here...</p>
 
             <button type="button" className="logout-button"
